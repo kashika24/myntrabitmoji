@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Builder</title>
+    <link rel="stylesheet" href="avatarr.css">
+    <style>
+        .controls {
+            margin-bottom: 1px;
+        }
+        .controls select {
+            margin-right: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="logo" src="assets/logo.png" alt="myntra-logo" style="height: 74px;">
+        <h1 class="heading">Customise your Avatar</h1>
+        <h2 class="sell">Introducing the new
+            <br> GenZ  solution to all problems</h2>
+    </div>
+
+    <div class="avatar-container">
+        <canvas id="avatarCanvas"  width="400" height="400" style="background-image: url(assets/avtbk.png); background-repeat: no-repeat; background-size: contain;"></canvas>
+        
+    
+    
+   <!-- Add controls for changing face, hairstyle, etc. -->
+     
+    <div class="controls">
+        <label for="body"></label>
+        <select name="body" id="body" style="margin-left: 20%;" >
+            <option value="body1.png">Body 1</option>
+            <option value="body3.png">Body 2</option>
+            <option value="body2.png">Body 3</option>
+        </select>
+
+        <label for="face"></label>
+        <select name="face" id="face" style="margin-top: 1px; margin-left: 60%;">
+            <option value="face1.png">Face 1</option>
+            <option value="face2.png">Face 2</option>
+        </select>
+    
+        <label for="hairstyle"></label>
+        <select name="hairstyle" id="hairstyle" style="margin-left: 20%;">
+            <option value="hairstyle1.png">Hair 1</option>
+            <option value="hairstyle2.png">Hair 2</option>
+            <!-- <option value="hairstyle3.png">Hair 3</option>
+            <option value="hairstyle4.png">Hair 4</option> -->
+            <option value="hairstyle5.png">Hair 3</option>
+            <option value="hairstyle6.png">Hair 4</option>
+        </select>
+    
+        <label for="eyes"></label>
+        <select name="eyes" id="eyes" style="margin-top: 1px; margin-left: 60%;">
+            <option value="eyes1.png">Eyes 1</option>
+            <option value="eyes2.png">Eyes 2</option>
+            <option value="eyes3.png">Eyes 3</option>
+            <option value="eyes4.png">Eyes 4</option>
+        </select>
+
+        <label for="eyebrows"></label>
+        <select name="eyebrows" id="eyebrows" style="margin-left: 20%;">
+            <option value="eyebrows1.png">Eyebrows 1</option>
+            <option value="eyebrows2.png">Eyebrows 2</option>
+            <option value="eyebrows3.png">Eyebrows 3</option>
+            <option value="eyebrows4.png">Eyebrows 4</option>
+            <option value="eyebrows5.png">Eyebrows 5</option>
+
+        </select>
+    
+         <label for="mouth"></label>
+        <select name="mouth" id="mouth" style="margin-top: 1px; margin-left: 60%;">
+            <!-- <option value="mouth1.png">Mouth 1</option>
+            <option value="mouth2.png">Mouth 2</option> -->
+            <option value="mouth3.png">Mouth 1</option>
+        </select>
+    
+    <!--    <label for="accessories">Accessories:</label>
+        <select name="accessories" id="accessories">
+            <option value="accessory1.png">Accessory 1</option>
+            <option value="accessory2.png">Accessory 2</option>
+        </select> -->
+    </div>
+</div>
+
+       
+              <h4 style="margin: 10px;">*To save the changes and update the Avatar or to go back to Myntra's shopping page, click the button below </h4>
+
+    <div >
+        <!-- <h4>*To save the changes and update the Avatar or to go back to Myntra's shopping page, click the button below </h4> -->
+        <button id="saveButton" class="submit">Go Back</button>
+        
+
+        <button id="saveAvatar" class="submit">Save Avatar</button>
+        <button id="loadAvatar" class="submit">Load Avatar</button>
+    </div>
+
+    </div>
+
+    
+    
+    <script src="avtr.js"></script>
+</body>
+</html>
